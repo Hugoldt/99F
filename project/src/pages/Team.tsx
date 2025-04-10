@@ -3,27 +3,27 @@ import React from 'react';
 const Team = () => {
   const team = [
     {
-      name: "Pierre Dubois",
+      name: "Nino.T",
       role: "Maître Tailleur",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80",
+      image: "https://imgur.com/a/QiK4ZC6.jpeg",
       description: "Plus de 20 ans d'expérience dans la confection de costumes sur mesure."
     },
     {
-      name: "Marie Laurent",
+      name: "Paul Adrien.D",
       role: "Styliste",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80",
-      description: "Experte en tendances et conseils personnalisés pour nos clients."
+      image: "https://i.imgur.com/w5VNTlA.jpeg",
+      description: "Expert en tendances et conseils personnalisés pour nos clients."
     },
     {
-      name: "Jean Martin",
+      name: "Hugo.L",
       role: "Artisan Bottier",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80",
+      image: "https://imgur.com/a/y7TWEMP.jpeg",
       description: "Spécialiste du travail du cuir et de la fabrication de chaussures sur mesure."
     },
     {
-      name: "Sophie Bernard",
+      name: "Antoine.C",
       role: "Responsable Client",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80",
+      image: "https://imgur.com/a/8HGkM3J.jpeg",
       description: "Votre interlocutrice privilégiée pour un service personnalisé."
     }
   ];
@@ -39,11 +39,11 @@ const Team = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {team.map((member, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="aspect-w-1 aspect-h-1">
+              <div className="relative w-full h-[400px]">
                 <img 
                   src={member.image} 
                   alt={member.name}
-                  className="object-cover object-center w-full h-full"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
                 />
               </div>
               <div className="p-6">

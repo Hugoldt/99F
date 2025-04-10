@@ -54,7 +54,7 @@ Tu parles avec élégance, comme si tu recevais un client en boutique.
             userMsg,
           ],
           temperature: 0.7,
-          max_tokens: 500,
+          max_tokens: 300,
         }),
       });
 
